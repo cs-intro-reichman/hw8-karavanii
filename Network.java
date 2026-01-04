@@ -105,7 +105,7 @@ public class Network {
         int tempmax =0;
         int maxindex=0;
         if (userCount ==0) {
-            return "error";
+            return null;
         }
         for(int i =0;i<userCount;i++){
             tempmax =0;
