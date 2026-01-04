@@ -71,6 +71,9 @@
     /** Removes the given name from the follows list of this user. If successful, returns true.
      *  If the name is not in the list, does nothing and returns false. */
     public boolean removeFollowee(String name) {
+        if (name == null) {
+            return false;
+        }
         for(int i=0;i<follows.length;i++){
             if (name.equals(follows[i])) {
                 for(int j =i;j<follows.length-1;j++){
